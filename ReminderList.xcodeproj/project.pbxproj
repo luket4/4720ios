@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		3B0B2C081C7BC50600627862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B2C071C7BC50600627862 /* AppDelegate.swift */; };
 		3B0B2C0A1C7BC50600627862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B2C091C7BC50600627862 /* ViewController.swift */; };
-		3B0B2C0D1C7BC50600627862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B2C0B1C7BC50600627862 /* Main.storyboard */; };
+		3B0B2C0D1C7BC50600627862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B2C0B1C7BC50600627862 /* Main.storyboard */; settings = {ASSET_TAGS = (1, ); }; };
 		3B0B2C0F1C7BC50600627862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B2C0E1C7BC50600627862 /* Assets.xcassets */; };
 		3B0B2C121C7BC50600627862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0B2C101C7BC50600627862 /* LaunchScreen.storyboard */; };
 		3B0B2C1D1C7BC50600627862 /* ReminderListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B2C1C1C7BC50600627862 /* ReminderListTests.swift */; };
+		3B0B2C281C7BCADD00627862 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B2C271C7BCADD00627862 /* Reminder.swift */; };
+		3B0B2C291C7BCADD00627862 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B2C271C7BCADD00627862 /* Reminder.swift */; };
+		3B9C0BF61C7BDBFA00B419FB /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C0BF51C7BDBFA00B419FB /* ReminderTableViewCell.swift */; };
+		3B9C0BF81C7BF1B600B419FB /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C0BF71C7BF1B600B419FB /* ReminderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 		3B0B2C181C7BC50600627862 /* ReminderListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReminderListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0B2C1C1C7BC50600627862 /* ReminderListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListTests.swift; sourceTree = "<group>"; };
 		3B0B2C1E1C7BC50600627862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0B2C271C7BCADD00627862 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		3B9C0BF51C7BDBFA00B419FB /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		3B9C0BF71C7BF1B600B419FB /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +66,8 @@
 		3B0B2BFB1C7BC50600627862 = {
 			isa = PBXGroup;
 			children = (
+				3B0B2C271C7BCADD00627862 /* Reminder.swift */,
+				3B9C0BF71C7BF1B600B419FB /* ReminderTableViewController.swift */,
 				3B0B2C061C7BC50600627862 /* ReminderList */,
 				3B0B2C1B1C7BC50600627862 /* ReminderListTests */,
 				3B0B2C051C7BC50600627862 /* Products */,
@@ -80,6 +89,7 @@
 				3B0B2C071C7BC50600627862 /* AppDelegate.swift */,
 				3B0B2C091C7BC50600627862 /* ViewController.swift */,
 				3B0B2C0B1C7BC50600627862 /* Main.storyboard */,
+				3B9C0BF51C7BDBFA00B419FB /* ReminderTableViewCell.swift */,
 				3B0B2C0E1C7BC50600627862 /* Assets.xcassets */,
 				3B0B2C101C7BC50600627862 /* LaunchScreen.storyboard */,
 				3B0B2C131C7BC50600627862 /* Info.plist */,
@@ -140,6 +150,10 @@
 		3B0B2BFC1C7BC50600627862 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					0,
+					1,
+				);
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Uva;
@@ -197,8 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0B2C281C7BCADD00627862 /* Reminder.swift in Sources */,
 				3B0B2C0A1C7BC50600627862 /* ViewController.swift in Sources */,
 				3B0B2C081C7BC50600627862 /* AppDelegate.swift in Sources */,
+				3B9C0BF81C7BF1B600B419FB /* ReminderTableViewController.swift in Sources */,
+				3B9C0BF61C7BDBFA00B419FB /* ReminderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0B2C1D1C7BC50600627862 /* ReminderListTests.swift in Sources */,
+				3B0B2C291C7BCADD00627862 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +406,7 @@
 				3B0B2C231C7BC50600627862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B0B2C241C7BC50600627862 /* Build configuration list for PBXNativeTarget "ReminderListTests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +415,7 @@
 				3B0B2C261C7BC50600627862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
